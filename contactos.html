@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos - Golden State Warriors</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            background: #0033A0;
+            color: #000;
+        }
+
+        #container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #FFC72C;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .logo {
+            height: 80px;
+        }
+
+        #links {
+            display: flex;
+            gap: 15px;
+        }
+
+        #links a {
+            background: #0033A0; 
+            color: #FFC72C;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        #links a:hover {
+            background: #002080;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content h2 {
+            color: #0033A0;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            text-align: justify;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .contact-form {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            color: #0033A0;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .contact-form button {
+            background-color: #0033A0;
+            color: #FFC72C;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #002080;
+        }
+
+        #map {
+            margin-top: 30px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #0033A0;
+            color: #FFC72C;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        #footer a {
+            color: #FFC72C;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img class="logo" src="https://logowik.com/content/uploads/images/605_golden_state.jpg" alt="Logo">
+            <div id="links">
+                <a href="index.html">Ínicio</a>
+                <a href="historia.html">História</a>
+                <a href="jogadores.html">Jogadores</a>
+                <a href="contactos.html">Contactos</a>              
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Contactos</h2>
+            <p>Entre em contacto connosco utilizando o formulário abaixo. Estamos disponíveis para responder a dúvidas e sugestões.</p>
+
+            <div class="contact-form">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="6" placeholder="Digite sua mensagem" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </div>
+
+            
+        </div>
+
+        <div id="footer">
+            <p>© 2025 Golden State Warriors Fan Page | Desenvolvido por Hugo</p>
+  
+        </div>
+    </div>
+</body>
+</html>
+
